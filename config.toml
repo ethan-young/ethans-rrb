@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Ethan's RRB"
+title = "ERRB"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[menu.main]]
