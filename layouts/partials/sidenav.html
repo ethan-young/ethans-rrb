@@ -1,0 +1,7 @@
+<!-- Sidebar navigation menu-->
+<nav class="sidenav">
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.main.ByWeight }}
+  <a class="sidenav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+  {{ end }}
+</nav>

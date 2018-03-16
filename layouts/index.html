@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+<div class="homepage">
+
+  <h1 id="title">{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <div class="card-container">
+  {{ range .Site.Menus.main.ByWeight }}
+    <div class="card">
+      <a href="{{ .URL }}"><h3>{{ .Name  }}</h3></a>
+    </div>
+  {{end}}
+  </div>
+</div>
